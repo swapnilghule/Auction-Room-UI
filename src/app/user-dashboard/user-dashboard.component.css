@@ -1,0 +1,120 @@
+.dashboard-container, .auction-room, .auction-summary, .player-pool .mat-card-title {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+/* Mat-Card Styling */
+.card {
+  max-width: 800px; /* Limit card width for better readability */
+  margin: 20px auto; /* Center the card on the page */
+  padding: 20px;
+  border-radius: 8px; /* Soft corners for a modern look */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #ffffff; /* White background for contrast */
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3f51b5; /* Indigo color for title */
+  margin-bottom: 10px;
+}
+
+.card-content {
+  padding: 12px 8px;          /* Adds inner padding */
+  line-height: 1.6;           /* Space between lines for readability */
+  color: #333333;             /* Darker text color */
+}
+
+/* Mat-Table Styling */
+.table {
+  width: 100%; /* Full width of card */
+  max-width: 750px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+.header-cell {
+  font-weight: bold;
+  background-color: #e3f2fd; /* Light blue header background */
+  color: #1976d2; /* Deep blue text */
+  padding: 12px;
+}
+
+.cell {
+  padding: 12px;
+  color: #444;
+  background-color: #fafafa; /* Light background for rows */
+}
+
+.row:nth-child(even) .mat-cell {
+  background-color: #f3f4f6; /* Alternate row color */
+}
+
+/* Buttons */
+.button, raised-button {
+  margin: 8px;
+  background-color: #1976d2; /* Deep blue button */
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.button:hover, .raised-button:hover {
+  background-color: #1565c0; /* Slightly darker on hover */
+}
+
+/* Form Elements */
+.form-field {
+  width: 100%; /* Full width for form fields */
+  margin: 12px 0;
+}
+
+.form-field-label {
+  color: #1976d2;
+}
+
+.input-element {
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.select-trigger {
+  color: #5f6368;
+}
+
+/* Table Header Styling */
+.header-row {
+  border-bottom: 2px solid #1976d2; /* Bold bottom border for header */
+}
+
+.mat-footer-row {
+  border-top: 2px solid #1976d2; /* Bold top border for footer */
+}
+
+.divider {
+  margin: 16px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .card {
+    padding: 16px;
+    max-width: 95%; /* Fit more comfortably on small screens */
+  }
+
+  .cell, .header-cell {
+    padding: 8px;
+  }
+
+  .button, .raised-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}

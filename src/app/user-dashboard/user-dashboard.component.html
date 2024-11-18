@@ -1,0 +1,38 @@
+
+
+<div class="dashboard-container">
+  <h2>Available Auctions</h2>
+
+  <mat-table class="table" [dataSource]="availableAuctions">
+    <ng-container matColumnDef="name">
+      <mat-header-cell class="header-cell" *matHeaderCellDef> Event Name </mat-header-cell>
+      <mat-cell class="cell" *matCellDef="let auction">{{ auction.name }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="prizePool">
+      <mat-header-cell class="header-cell" *matHeaderCellDef> Prize Pool </mat-header-cell>
+      <mat-cell class="cell" *matCellDef="let auction">{{ auction.prizePool }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="teamsRegistered">
+      <mat-header-cell class="header-cell" *matHeaderCellDef> Teams Registered </mat-header-cell>
+      <mat-cell class="cell" *matCellDef="let auction">{{ auction.teamsRegistered }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <mat-header-cell class="header-cell" *matHeaderCellDef> Status </mat-header-cell>
+      <mat-cell class="cell" *matCellDef="let auction">{{ auction.status }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <mat-header-cell class="header-cell" *matHeaderCellDef> Action </mat-header-cell>
+      <mat-cell class="cell" *matCellDef="let auction">
+        <button mat-raised-button class="raised-button" *ngIf="auction.status === 'Open'" (click)="registerForAuction()">Register</button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row class="header-row" *matHeaderRowDef="displayedColumnsUser"></mat-header-row>
+    <mat-row class="row" *matRowDef="let row; columns: displayedColumnsUser;"></mat-row>
+  </mat-table>
+</div>
+

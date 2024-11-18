@@ -1,0 +1,14 @@
+toolbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex: 1;                    /* Pushes title to the left */
+}
+
+toolbar button {
+  color: black;               /* White text for icons/buttons */
+  margin-left: 8px;           /* Spacing between buttons */
+}
+
+toolbar button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background change */
+}

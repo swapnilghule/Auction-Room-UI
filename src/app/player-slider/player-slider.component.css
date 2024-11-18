@@ -1,0 +1,180 @@
+/* Container and Main Layout */
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Profile Card Column */
+.card-column {
+  flex: 3; /* Takes more than half the width */
+}
+
+.profile-card {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Player Image and Info */
+.profile-image-container {
+  text-align: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.player-info p {
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+/* Bid Input and Buttons */
+.bid-input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.input-element {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container button {
+  width: 48%;
+}
+
+/* Next Button Column */
+.next-button-column {
+  flex: 1; /* Takes up the remaining width */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-button-column button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: white;
+  background-color: #00796b;
+  border-radius: 8px;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.player-info p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.card-footer {
+  background: #333;
+  color: white;
+}
+
+.form-control {
+  max-width: 200px;
+}
+
+.btn-accent {
+  background-color: #00796b;
+  color: white;
+}
+
+.next-button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  flex: 1;
+}
+
+
+.summary-section, .purse-section {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-section h4, .purse-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.list-group-item {
+  background-color: #e9ecef;
+  color: #333;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.auction-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image-container {
+  width: 25vw;
+  height: 25vw;
+}
+
+.purse-section .purse-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00796b;
+}
+.button, raised-button {
+  margin: 8px;
+  background-color: #1976d2; /* Deep blue button */
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+}

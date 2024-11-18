@@ -1,0 +1,118 @@
+<div class="container-fluid auction-room-container">
+  <div class="row">
+    <!-- Left Sidebar: Summary of Players Bought So Far -->
+
+
+    <!-- Center: Auction Room for Current Player -->
+    <div class="col-md-6 auction-room" style="background-image: url('assets/background2.jpg')" *ngIf="auctionRoomData[currentPlayerIndex]" [@slideAnimation]>
+      <div class="card profile-card">
+        <div class="card-body d-flex">
+          <div class="profile-image-container">
+
+            <h4>Players Bought</h4>
+           <ul> <li>
+              Rashid Khan
+            </li>
+            <li>
+              Heinrich Klassen
+            </li>
+             <li>
+               Rashid Khan
+             </li>
+             <li>
+               Heinrich Klassen
+             </li><li>
+               Rashid Khan
+             </li>
+             <li>
+               Heinrich Klassen
+             </li><li>
+               Rashid Khan
+             </li>
+             <li>
+               Heinrich Klassen
+             </li>
+           </ul>
+          </div>
+
+          <div class="player-info">
+
+          </div>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+        </div>
+
+      </div>
+
+
+          <div class="text-center" style="background-color: green">
+
+
+            <h4>Purse Amount</h4>
+          <p class="purse-amount">{{ purseAmount | currency }}</p>
+          </div>
+
+
+
+      <div class="card profile-card">
+        <div class="card-body d-flex">
+          <div class="profile-image-container">
+            <img [src]="auctionRoomData[currentPlayerIndex].image" alt="Player Image" class="profile-image" />
+          </div>
+
+          <div class="player-info">
+            <p><strong>Player Name:</strong> {{ auctionRoomData[currentPlayerIndex].playerName }}</p>
+            <p><strong>Category:</strong> {{ auctionRoomData[currentPlayerIndex].category }}</p>
+            <p><strong>Base Price:</strong> {{ auctionRoomData[currentPlayerIndex].basePrice | currency }}</p>
+            <p><strong>Current Bid:</strong> {{ auctionRoomData[currentPlayerIndex].bidAmount | currency }}</p>
+          </div>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-accent me-2" (click)="placeBid()">Place Bid</button>
+          <input type="text" class="form-control me-2" [(ngModel)]="player.bidAmount" placeholder="Enter Bid" />
+          <button class="btn btn-danger" (click)="passBid()">Pass</button>
+        </div>
+
+      </div>
+
+
+          <div class="text-center">
+            <button class="raised-button" mat-raised-button color="accent" (click)="nextPlayer()">Next Player</button>
+          </div>
+
+
+
+      <div class="card profile-card">
+        <div class="card-body d-flex">
+          <div class="profile-image-container">
+            <h4>Next Players In Line</h4>
+            <ul>
+              <li>
+                Liam LivingStone
+              </li>
+              <li>
+                David Miller
+              </li>
+            </ul>
+          </div>
+
+          <div class="player-info">
+
+          </div>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+</div>

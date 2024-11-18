@@ -1,0 +1,11 @@
+/* src/app/login/login.component.css and src/app/register/register.component.css */
+.login-card, .register-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,14 @@
+<mat-table class="table" [dataSource]="auctionSummary">
+  <ng-container matColumnDef="team">
+    <mat-header-cell class="header-cell" *matHeaderCellDef> Team </mat-header-cell>
+    <mat-cell class="cell" *matCellDef="let summary">{{ summary.team }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="playersWon">
+    <mat-header-cell class="header-cell" *matHeaderCellDef> Players Won </mat-header-cell>
+    <mat-cell class="cell" *matCellDef="let summary">{{ summary.playersWon }}</mat-cell>
+  </ng-container>
+
+  <mat-header-row class="header-row" *matHeaderRowDef="displayedColumnsSummary"></mat-header-row>
+  <mat-row class="row" *matRowDef="let row; columns: displayedColumnsSummary;"></mat-row>
+</mat-table>
